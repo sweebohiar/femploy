@@ -16,7 +16,7 @@ export default ({
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Is your elevator pitch ready?</Text>
+      <Text style={styles.title}>Find a Recruiter</Text>
       {opponentsIds.map(id => {
         const user = CallService.getUserById(id);
         const selected = selectedUsersIds.some(userId => id === userId);

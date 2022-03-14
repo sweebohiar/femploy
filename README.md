@@ -1,11 +1,11 @@
-# Elevate
-Hack For Good 2021 Team SweeBoHiar
+# Femploy
 
-An elevator pitch app, made with react-native. 
+Hack For Good 2022 Team SweeBoHiar
 
 ![Start screen](https://github.com/joshenx/elevate/start.png)
 
 ## How to install
+
 1. Install react-native from https://reactnative.dev/
 2. Set up android emulator from Android Studio
 3. Clone the repository

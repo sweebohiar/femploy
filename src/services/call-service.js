@@ -6,7 +6,7 @@ import Sound from 'react-native-sound';
 import {users} from '../config';
 
 export default class CallService {
-  static MEDIA_OPTIONS = {audio: true, video: false};
+  static MEDIA_OPTIONS = {audio: true, video: true};
 
   _session = null;
   mediaDevices = [];

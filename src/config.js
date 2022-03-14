@@ -15,6 +15,7 @@ export const users = [
     name: 'Juay Hee',
     login: 'juay',
     password: 'juayelevate',
+    profilePic: 'juay.png',
     color: '#fa6f6c',
   },
   {
@@ -24,5 +25,4 @@ export const users = [
     password: 'joshenelevate',
     color: '#03aee2',
   },
-
 ];

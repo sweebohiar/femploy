@@ -7,20 +7,27 @@ import CallingLoader from './CallingLoader';
 export default ({streams}) => {
   const RTCViewRendered = ({userId, stream}) => {
     if (stream) {
-      const profilePic = require('../../../assets/juay.jpg');
-
+      console.log('yeet');
+      console.log(userId);
+      // const profilePic =
+      //   userId === 3743441
+      //     ? require('../../../assets/juay.jpg')
+      //     : require('../../../assets/joshen.jpg');
+      if (userId === 3743441) {
+        return (
+          <Image
+            source={require('../../../assets/juay.jpg')}
+            resizeMode="contain"
+            style={styles.profilePic}
+          />
+        );
+      }
       return (
         <Image
-          source={profilePic}
+          source={require('../../../assets/joshen.jpg')}
           resizeMode="contain"
           style={styles.profilePic}
         />
-        // <RTCView
-        //   objectFit="cover"
-        //   style={styles.blackView}
-        //   key={userId}
-        //   streamURL={stream.toURL()}
-        // />
       );
     }
 
@@ -130,5 +137,6 @@ const styles = StyleSheet.create({
   },
   profilePic: {
     height: '50%',
+    width: '100%',
   },
 });
